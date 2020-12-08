@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(4 ,min-content);
+  width: 80%;
+  margin: auto;
+  font-family: 'Poppins',
+  sans-serif;
+  color: aliceblue;
+  justify-content: space-between;
+}
+
+.productCard{
+  height: 60vh;
+  margin: 5vh 0;
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.productCard img{
+   height: 100%;
+   width: auto;
+   z-index: -1000;
+   transform: scale(1);
+   transition: 0.3s linear;
+  
+}
+
+.content
+{
+   position: absolute;
+   background-color:rgba(0, 0, 0, 1);
+   top: 0;
+   left: 0;
+   height: 50%;
+   width: 100%;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   transform: translateY(200%);
+   transition: 0.5s linear;
+}
+
+ .productCard img:hover{
+   transform: scale(1.2);
+}
+
+.productCard img:hover + .content {
+   transform: translateY(100%);
+} 
+
+.content:hover{
+   transform: translateY(100%);
+}
+
+
+ .dull{
+   opacity: 0.5;
+   font-weight: 100;
+   margin-bottom:0.5rem ;
+}
+
+.content h3 {
+   font-size: 16px;
+   font-weight: 100;
+   text-transform: uppercase;
+   margin: 0 0.5rem;
+}
+
+.content h4{
+   font-size: 14px;
+   font-weight: 100;
+   opacity: 0.5;
+}
+
+.productCard .btn{
+background-color: black;
+color: aliceblue;
+border:2px solid #007DFC;
+padding: 0.4rem 2rem;
+cursor: pointer;
+font-size: 13px;
+text-decoration: none;
+height: 100%;
+}
+
+.productCard .btn:hover{
+   color: aliceblue;
+   background-color: #007DFC;
+} 
+
+.card_actions {
+   display: flex;
+   margin-top: 1rem;
+   justify-content: space-around;
+   width: 90%;
+}
+
+
+.btn.red{
+   border:2px solid #eb2525;
+}
+
+.btn.red:hover {
+   background-color:  #eb2525;
+}
+
+
+

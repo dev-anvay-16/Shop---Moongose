@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap');
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+body{
+   background-color: #121212;
+   overflow-x: hidden;
+}
+
+.header{
+   height: 3.5rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #2A2A2A;
+   z-index: 10;
+}
+
+.navigation
+{
+   display: flex;
+   height: 100%;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   color:aliceblue; 
+   position: relative;
+   font-family: 'Noto Sans JP',
+   sans-serif;
+   z-index: 10;
+}
+
+.navigation .home
+{
+   position: absolute;
+   left: 5%;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+span{
+   color:#ea5455;
+}
+
+#signIn {
+   padding: 0 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   text-decoration: none;
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+#signIn img {
+
+   transform: scale(0.7);
+}
+
+.signName:hover .logout {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.signName{
+   height: 3.5rem;
+   background-color: #007DFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.3s;
+  
+}
+
+.logout {
+   height: 80%;
+   width: 100%;
+
+   background-color: #2A2A2A;
+   color: aliceblue;
+ 
+   position: absolute;
+   top:100%;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   display: none;
+}
+
+.logout button{
+   background-color: transparent;
+   color: #8A8A8A;
+   outline : none;
+   border: none;
+   font-size: 0.9rem;
+}
+
+.logout button:hover{
+   color : grey;
+}
+
+.navigation ul {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   list-style: none;
+   position: absolute;
+   right: 0%;  
+   height: 100%;
+   align-items: center; 
+}
+
+.home{
+   color: aliceblue;
+   text-decoration: none;
+}
+
+.navigation ul li a{
+   margin: 0 2rem;
+   color: aliceblue;
+   text-decoration: none;
+   font-size: 0.9rem;
+   
+}
+
+.navigation ul li a {
+   margin: 0 2rem;
+   color: aliceblue;
+   text-decoration: none;
+}
+.navigation ul li img {
+  
+   padding: 0 1rem;
+   color: aliceblue;
+   text-decoration: none;
+}
+
+.navigation .active {
+   color: #ea5455;
+}
+
+
+
+
+
+
+
+.main{
+   font-family: 'Poppins',
+   sans-serif;
+   width: 100vw;
+   margin: 15vh auto 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: 30vh;
+   color:aliceblue;
+   position: relative;
+}
+
+.gradient{
+   padding: 10rem;
+   height: 40vh;
+   width: 80vw;
+   margin: auto;
+   position: relative;
+   background: rgb(58, 89, 180);
+   background: linear-gradient(85deg, rgba(58, 89, 180, 1) 0%, rgba(0, 143, 255, 1) 50%, rgba(69, 252, 231, 1) 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.gradient img{
+   height: 50vh;
+   position: absolute;
+   right: 10%;
+   bottom: 0%;
+ 
+
+}
+
+
+.slider{
+   overflow-y: scroll;
+   height: 100vh;
+   width: 30%;
+   background-color: black;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 100;
+   transform: translateX(100%);
+   transition: 0.5s linear;
+   
+   
+}
+.sactive{
+   transform: translateX(0%);
+}
+
+
+
+
+#close{
+   height: 25px;
+   justify-self: center;
+   position: absolute;
+   left: 50%;
+   top: 5%;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.8);
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+   height: 30px;
+}
+
+::-webkit-scrollbar-thumb:window-active {
+   background: rgba(0, 125, 252, 1);
+}
+
+
+::-webkit-scrollbar-thumb:window-inactive {
+   background: rgba(255, 255, 255, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 125, 252, 1);
+
+}
+
+
+
+
+

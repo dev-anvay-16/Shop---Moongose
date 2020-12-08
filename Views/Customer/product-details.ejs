@@ -1,0 +1,56 @@
+<%- include('../includes/head.ejs') %>
+   <link rel="stylesheet" href="/Styles/home.css">
+   <link rel="stylesheet" href="/Styles/description.css">
+   <style>
+      #img1 {
+         background-position: center;
+   width: 60%;
+   height: 80vh;
+   object-fit: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url("<%= product.imageUrl %>");
+      }
+   </style>
+</head>
+<%- include('../includes/navigation.ejs') %>
+   <div class="main">
+      <div class="content">
+      <div class="img">
+         <div id="img1"></div>
+      </div>
+      <div class="description">
+         <h3 class="time"><%= product.year  %></h3>
+         <h2 class="title"><%= product.title  %></h2>
+         <p class="mini"><%= product.description  %></p>
+
+      <div class="price">
+         <h3>Price:</h3>
+         <h3><%= product.price%></h3>
+      </div>
+
+      <div class="aligned_options">
+         <button type="submit" class="buy">
+            Buy
+         </button>
+         <form action="/cart" method="POST">
+            <button type="submit" class="cart">Add To Cart</button>
+            <input type="hidden" value = "<%= product._id %>" name = "prodId">
+            <input type="hidden" value = "<%= product.price %>" name = "prodPrice">
+            <input type="hidden" value = "<%= product.imageUrl %>" name = "prodImageUrl">
+            <input type="hidden" value = "<%= product.title %>" name = "prodTitle">
+            <input type="hidden" , name="_csrf" value = "<%=csrfToken %>">
+            
+            
+         </form>
+      </div>
+      </div> 
+      </div>
+   </div>
+
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"></script>
+   <script src="/JavaScript/product.js"></script>  
+<%- include('../includes/end.ejs') %>

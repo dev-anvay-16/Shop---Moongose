@@ -1,0 +1,79 @@
+<%- include('../includes/head.ejs') %>
+
+ <link rel="stylesheet" href="/Styles/home.css">
+<link rel="stylesheet" href="/Styles/order.css">
+</head>
+
+<%- include('../includes/navigation.ejs') %>
+
+<div class="main1">
+    
+<% if (orders.length <= 0) { %>
+                <h1 class="nothing">Nothing there!</h1>
+            <% } else { %>
+
+  <div class="orderHeading">
+     <h2>Your Orders</h2>
+  </div> 
+  <div class="linebreak"></div>            
+
+ <% orders.forEach(order => {  let sum = 0; %>     
+   
+   
+
+ <div class="orders">
+         <div class="order">
+            <div class="upper">
+               <div class="leftSpan">
+                  <% order.products.forEach(product => { 
+                     sum += (product.product.price)*(product.quantity);
+                   }); %>   
+                  <div class="span1">
+                  <h5>Order Placed</h5>
+                  <h4><%= order.date %></h4>
+               </div>
+               <div class="span2">
+                  <h5>Total</h5>
+                  <h4><span class = 'INR'> &#8377</span> <%= sum %></h4>
+               </div>
+               <div class="span3">
+                  <h5>Ship To</h5>
+                  <h4><%= order.user.name %></h4>
+               </div>
+               </div>
+               <div class="rightSpan">
+                  <div class="span4">
+                     <h5>Order ID</h5>
+                     <h4 class='productId'><%= order._id %></h4>
+                  </div>
+               </div>
+            </div>
+            <div class="lower">
+               <% order.products.forEach(product => { %>
+               <div class="products">
+                  <div class="img">
+                     <img src="<%= product.product.imageUrl %>" alt="">
+                  </div>
+                  <div class="data">
+                     <h4><%= product.product.title %></h4>
+                     <h5><span class = 'INR'> &#8377</span>  &nbsp;<%= product.product.price %></h5>
+                     <h5>Quantity : <%= product.quantity %></h5>
+                  </div>
+                  <div class="other">
+                     <button class="btn" >Buy it again</button>
+                  </div>
+               </div>
+               <% if(order.products.length > 1) {  %>
+                  <hr>
+                  <% }%>
+               <% }); %>
+              
+            </div>
+         </div>
+      </div>
+       <% });} %>  
+</div>
+
+
+
+<%- include('../includes/end.ejs') %>

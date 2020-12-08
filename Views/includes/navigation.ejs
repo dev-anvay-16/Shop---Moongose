@@ -1,0 +1,32 @@
+<body>
+   <div class="header">
+      <nav class="navigation">
+         <a href="/" class="home">Baka<span>Store</span></a>
+         <ul>
+            <li><a href="/shop" class = "<%= (path === '/shop') ? 'active' : ''%>">Shop</a><span class="edo"></span></li>
+            <% if(isAuthenticated) { %>
+            <li><a href="/cart"  class = "<%= (path === '/cart') ? 'active' : ''%>">Cart</a><span class="edo"></span></li>
+            <li><a href="/orders"  class = "<%= (path === '/orders') ? 'active' : ''%>">Orders</a><span class="edo"></span></li>
+             <% if(user.type === "ADMIN") { %>
+             <li><a href="/admin/add-product" class = "<%= (path === '/admin/add-product') ? 'active' : ''%>">Add Product</a><span class="edo"></span></li>
+            <li><a href="/admin/products" class = "<%= (path === '/admin/products') ? 'active' : ''%>">Admin Product</a><span class="edo"></span></li>
+            <li>
+               <% }} %>
+               <div class="signName">
+               <% if(!isAuthenticated) { %>
+                  <a href="/login"  id="signIn" class = "<%= (path === '/login') ? 'active' : ''%>"><i class="fas fa-user"></i>&nbsp&nbsp&nbspSign In</a>
+               <%} else {%>
+                  
+                  <h3 href="/"  id="signIn" class = "<%= (path === '/login') ? 'active' : ''%>"><i class="fas fa-user"></i>&nbsp&nbsp&nbsp<%=user.firstName%></h3>
+                  <form action="/logout" method="POST" class="logout">
+                      <input type="hidden" , name="_csrf" value = "<%=csrfToken%>">
+                     <button type="Submit">Logout</button>
+                  </form>
+               <% } %>
+               </div>
+            </li>
+            
+         </ul>
+         
+      </nav>
+   </div>

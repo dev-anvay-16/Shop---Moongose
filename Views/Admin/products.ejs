@@ -1,0 +1,36 @@
+<%- include('../includes/head.ejs') %>
+   <link rel="stylesheet" href="/Styles/home.css">
+   <link rel="stylesheet" href="/Styles/shopContent.css">
+</head>
+<%- include('../includes/navigation.ejs') %>
+   <div class="main">
+      <% if(products.length > 0){  %>
+      <div class="products">
+         <% for(let product of products) {%>
+        <div class="productCard"> 
+               <img src="<%= product.imageUrl %>" alt=""> 
+               <div class="content">
+                  <h3><%= product.title %></h3>
+
+                  <div class="card_actions">
+                    <a href=" /admin/edit-product/<%= product._id  %>?edit=true" class="btn">Edit</a>
+                    <form action="/admin/delete-product" method="POST">
+                     <button type="submit" class = 'btn red'>Delete</button>
+                     <input type="hidden" , name="_csrf" value = "<%=csrfToken %>">
+                     <input type="hidden" value="<%= product._id %>" name="productId">
+                  </form>
+                  </div>
+               </div> 
+         </div>
+         <% } %>
+      </div>
+      <% } else { %>
+       <h1>Nothing To Display!</h1>
+      <h2>List is empty!</h2> 
+      <% } %>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"></script>
+   <script src="/JavaScript/product.js"></script>  
+<%- include('../includes/end.ejs') %>

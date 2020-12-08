@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap');
+
+.main1{
+   margin: 15vh 0 ;
+}
+
+.orders {
+   width: 60%;
+   margin: 2rem auto;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'poppins', sans-serif;
+   
+}
+
+.order {
+   min-height: 40vh;
+   width: 100%;
+   border: 2px solid grey;
+   box-sizing: content-box;
+   border-radius: 5px;
+
+}
+
+.upper {
+   color: aliceblue;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   width: 100%;
+   margin: auto;
+   background-color: #212121;
+   height: 10vh;
+   align-items: center;
+
+}
+
+.leftSpan {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   background-color: transparent;
+   margin: 0 5%;
+}
+
+.rightSpan {
+   display: flex;
+   justify-content: flex-end;
+   margin: 0 5%;
+}
+
+h4,
+h5 {
+   font-weight: 400;
+   color: aliceblue;
+}
+
+.order .lower {
+   min-height: 25vh;
+   width: 100%;
+   align-items: center;
+
+}
+
+.products {
+
+   width: 100%;
+   display: grid;
+   grid-template-columns: 0.75fr 2fr 1fr;
+   margin: 1rem 0;
+}
+
+.img {
+
+   display: flex;
+   justify-content: center;
+}
+
+.btn {
+   padding: 0.3rem 4rem;
+   border: 2px solid #007DFC;
+   background-color: #121212;
+   color: aliceblue;
+   font-family: 'Noto Sans JP',
+   sans-serif;
+}
+
+.btn:hover{
+   background-color: #007DFC;
+}
+
+.productId{
+   
+   text-transform: uppercase;
+}
+
+.other {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.data {
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   margin: 0 0 3rem;
+}
+
+.img img {
+   height: 20vh;
+}
+
+hr {
+   opacity: 0.5;
+}
+
+
+.INR {
+   font-size: 1rem;
+   font-family: sans-serif;
+   align-self: center;
+   text-align: center;
+   justify-self: center;
+   font-weight: 100;
+   color: aliceblue;
+}
+
+
+.orderHeading{
+   color: aliceblue;
+   width: 60%;
+   margin: auto;
+   font-family: 'Noto Sans JP',sans-serif;
+   font-size: 22px;
+   font-weight: 100;
+}
+
+.linebreak {
+   width: 60%;
+   height: 2px;
+   background: linear-gradient(85deg, rgba(58, 89, 180, 1) 0%, rgba(0, 143, 255, 1) 20%, rgba(69, 252, 231, 1) 100%);
+   margin: 1rem auto;
+}
+
+.nothing{
+   color: aliceblue;
+   font-weight: 100;
+   font-family: "poppins" , sans-serif;
+   text-align: center;
+   transform: translateY(200%);
+}

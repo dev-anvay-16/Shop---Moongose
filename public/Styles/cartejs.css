@@ -1,0 +1,176 @@
+.cartPage {
+   font-family: "poppins", sans-serif;
+   margin-top: 15vh;
+   width: 100%;
+   min-height: 100vh;
+}
+
+.cartHeading {
+   display: flex;
+   width: 75%;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+}
+
+.center {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 3rem;
+}
+
+.cartHeading h2,
+h3 {
+   font-weight: 400;
+   color: aliceblue;
+}
+
+
+.linebreak {
+   width: 80%;
+   height: 2px;
+   background: linear-gradient(85deg, rgba(58, 89, 180, 1) 0%, rgba(0, 143, 255, 1) 30%, rgba(69, 252, 231, 1) 100%);
+   margin: 0.5rem auto;
+}
+
+.cartContent {
+   margin: 1rem auto;
+   width: 80%;
+
+   height: 30vh;
+   display: flex;
+   justify-content: space-between;
+}
+
+.left {
+   width: 20%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+
+}
+
+
+.mid {
+   width: 70%;
+   padding: 1rem 3rem;
+}
+
+.mid .title {
+   color: #51adcf;
+}
+
+.right {
+   width: 13%;
+   display: flex;
+   justify-content: center;
+   height: 20%;
+   align-items: center;
+   padding: 1rem;
+   margin: 1rem 0;
+}
+
+.INR {
+   font-size: 19px;
+   font-family: sans-serif;
+   align-self: center;
+   text-align: center;
+   justify-self: center;
+   font-weight: 100;
+
+
+}
+
+.linebreak2 {
+   width: 80%;
+   height: 1px;
+   background-color: white;
+   margin: auto;
+   opacity: 0.3;
+}
+
+.right .amount {
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.left img {
+   height: 30vh;
+}
+
+.delete {
+   padding: 0.3rem 3rem;
+   background-color: #121212;
+   color: aliceblue;
+   font-size: 17px;
+   text-transform: uppercase;
+   font-weight: 400;
+   border: 2px solid #eb2525;
+}
+
+.order {
+   padding: 0.3rem 5rem;
+   background-color: #121212;
+   color: aliceblue;
+   font-size: 17px;
+   text-transform: uppercase;
+   font-weight: 400;
+   border: 2px solid #007DFC;
+}
+
+.order:hover {
+   background-color: #007DFC;
+}
+
+.delete:hover {
+   background-color: #eb2525;
+}
+
+.qAndA {
+   margin: 3rem 0;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+
+.qAndA button {
+   margin-left: 3rem;
+}
+
+.totalSum {
+   display: flex;
+   justify-content: flex-end;
+   width: 80%;
+   margin: 0 auto 5vh;
+   padding: 1rem 0;
+}
+
+.sub {
+   font-size: 25px;
+   font-weight: 1;
+   color: aliceblue;
+}
+
+.total {
+   font-weight: 400;
+   font-size: 25px;
+   letter-spacing: 1px;
+}
+
+
+.nothing {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 85vh;
+   position: absolute;
+   top: 0;
+
+}
+
+.nothing h3 {
+   color: aliceblue;
+   font-size: 30px;
+}

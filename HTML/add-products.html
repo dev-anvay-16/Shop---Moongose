@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/public/Styles/home.css">
+   <link rel="stylesheet" href="/public/Styles/add-product.css">
+</head>
+<body>
+   <div class="header">
+      <nav class="navigation">
+         <h3>Baka<span>Store</span></h3>
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Shop</a></li>
+            <li><a href="/admin/add-product">Add Product</a></li>
+         </ul>
+      </nav>
+   </div>
+
+   <div class="main">
+      <form action="/admin/product" method="POST" class="formCon">
+         <input type="text" name="prodName" class="inputArea">
+         <button type="submit" class="buttonStyle">Send</button>
+      </form>
+   </div>
+
+</body>
+</html>

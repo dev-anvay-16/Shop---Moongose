@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.content {
+    font-family: 'Poppins',
+    sans-serif;
+   margin-top: -10vh;
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   color: aliceblue;
+   
+   background-color: #121212;
+}
+
+.img {
+
+   width: 40%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+
+
+.description {
+   width: 60%;
+   height: 100%;
+   padding: 5rem 5rem 0 0;
+
+}
+
+.time {
+   color: grey;
+}
+
+.title {
+   padding: 0.5rem 0;
+}
+
+.mini {
+   padding: 1rem 0;
+   font-size: 14px;
+   opacity: 0.7;
+}
+
+.price {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   width: 30%;
+
+}
+
+.price h3 {
+   font-weight: 100;
+   opacity: 0.9;
+   padding: 1rem 0;
+}
+
+.buy {
+   padding: 0.5rem 3rem;
+   background-color: #121212;
+   color: aliceblue;
+   font-size: 17px;
+   text-transform: uppercase;
+   font-weight: 400;
+   border: 2px solid #007DFC;
+   margin: 5vh 3vh 0 0;
+}
+
+.buy:hover {
+   background-color: #007DFC;
+
+}
+
+.aligned_options {
+   display: flex;
+}
+
+.aligned_options form{
+   width: fit-content;
+}
+
+
+.cart {
+   padding: 0.5rem 3rem;
+   background-color: #121212;
+   color: aliceblue;
+   font-size: 17px;
+   text-transform: uppercase;
+   font-weight: 400;
+   border: 2px solid #eb2525;
+   margin: 5vh 3vh 0 0;
+}
+
+.cart:hover {
+   background-color: #eb2525;
+
+}
+
+.cartContent {
+   margin-top: 15%;
+   display: flex;
+   justify-content: space-between;
+   color: aliceblue;
+   font-family: "poppins" , sans-serif;
+}
+
+.cartContent img {
+   height: 30vh;
+   padding: 0.5rem;
+}
+
+.priceAndAll{
+   flex: 1;
+}
+
+.priceAndAll h3,
+h4 {
+   font-weight: 100;
+   padding: 1rem 1rem;
+}
+
+.priceAndAll h3 {
+   font-size: 0.95rem;
+}
+
+.priceAndAll h4 {
+   font-size: 0.9rem;
+}
+
+.left {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex: 1;
+}
+
+.left .quan {
+   padding: 0.5rem;
+   background-color: #007DFC;
+   color: aliceblue;
+   margin-right: 30%;
+   font-weight: 300;
+   letter-spacing: 1px;
+}
+
+
+.linebreak {
+   width: 90%;
+   height: 2px;
+   margin: 2rem auto 1rem;
+   background-color: #eb2525;
+
+}
+
+.total{
+   padding: 1rem 2rem;
+   color: aliceblue;
+   font-weight: 300;
+   font-family: "poppins",
+   sans-serif;
+   font-size: 20px;
+}
+
+
+
+/*
+
+.priceAndAll h3,
+h4 {
+   font-weight: 100;
+   padding: 1rem 1rem;
+}
+
+.priceAndAll h3 {
+   font-size: 0.95rem;
+}
+
+.priceAndAll h4 {
+   font-size: 0.9rem;
+}
+
+.left {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+
+.left .quan {
+   padding: 0.5rem;
+   background-color: #007DFC;
+   color: aliceblue;
+   margin-right: 30%;
+}
+
+.breakline {
+   width: 80%;
+   height: 1px;
+   margin: 3rem auto 1rem;
+   background-color: aliceblue;
+
+}
+
+h1 {
+   padding: 1rem 2rem;
+   color: aliceblue;
+   font-weight: 300;
+} */
+
+
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background: rgba(255, 255, 255, 0.8);
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+   height: 30px;
+}
+
+::-webkit-scrollbar-thumb:window-active {
+   background: rgba(0, 125, 252, 1);
+}
+
+
+::-webkit-scrollbar-thumb:window-inactive {
+   background: rgba(255, 255, 255, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 125, 252, 1);
+
+}
+
